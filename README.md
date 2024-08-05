@@ -1,50 +1,51 @@
-# MediaVault
-MediaVault Nedir?
-MediaVault, KeePass gibi şifre yöneticisi veritabanlarını yönetmek ve çeşitli işlemler yapmak için geliştirilmiş bir Python uygulamasıdır. Bu araç, şifrelerinizi güvenli bir şekilde saklamak, düzenlemek ve çeşitli şifre işlemlerini kolaylaştırmak için tasarlanmıştır.
 
-MediaVault'un Temel Özellikleri
-Veritabanı Yönetimi:
+## MediaVault Nedir?
 
-Giriş Listeleme: Veritabanınızdaki tüm şifreli girişleri detaylı bir şekilde listeleyebilirsiniz. Her bir girişin başlık, kullanıcı adı, şifre, URL ve notlarını görebilirsiniz.
-Yeni Giriş Ekleme: Yeni bir şifre girişi ekleyerek başlık, kullanıcı adı, şifre, URL ve notlar gibi bilgileri veritabanına kaydedebilirsiniz.
-Giriş Düzenleme: Mevcut bir girişin bilgilerini güncelleyebilirsiniz.
-Giriş Silme: İhtiyacınız olmayan girişleri veritabanından silebilirsiniz.
-Şifre İşlemleri:
+MediaVault, KeePass gibi şifre yöneticisi veritabanlarını yönetmek için geliştirilmiş bir Python uygulamasıdır. Bu araç, şifrelerinizi güvenli bir şekilde saklamak, düzenlemek ve çeşitli işlemleri kolaylaştırmak için tasarlanmıştır. Terminal tabanlı bir uygulamadır, bu nedenle komut satırında çalışır.
 
-Şifre Oluşturma: Güvenli ve rastgele şifreler oluşturabilirsiniz. Şifrelerin uzunluğunu ve karakter çeşitlerini belirleyebilirsiniz.
-Şifre Gösterme: Bir girişin şifresini görebilir, kopyalayabilirsiniz.
-Veri Dışa Aktarma ve İçe Aktarma:
+## Temel Özellikler
 
-Veri İçe Aktarma: Başka bir KeePass veritabanından girişleri mevcut veritabanınıza aktarabilirsiniz.
-Veri Dışa Aktarma: Veritabanınızdaki tüm girişleri CSV veya JSON formatında bir dosyaya dışa aktarabilirsiniz.
-Veritabanı ve Şifre Yönetimi:
+### Veritabanı Yönetimi
+- **Giriş Listeleme**: Veritabanınızdaki tüm şifreli girişleri detaylı bir şekilde listeleyin.
+- **Yeni Giriş Ekleme**: Yeni şifre girişi ekleyin ve başlık, kullanıcı adı, şifre, URL gibi bilgileri veritabanınıza kaydedin.
+- **Giriş Düzenleme**: Mevcut bir girişin bilgilerini güncelleyin.
+- **Giriş Silme**: İhtiyacınız olmayan girişleri veritabanından silin.
 
-Yeni Veritabanı Oluşturma: Yeni bir KeePass veritabanı oluşturabilir ve bunu belirli bir şifre ile koruyabilirsiniz.
-Veritabanı Şifresini Değiştirme: Var olan bir veritabanının şifresini değiştirebilirsiniz.
-Şifre Kırma:
+### Şifre İşlemleri
+- **Şifre Oluşturma**: Güvenli ve rastgele şifreler oluşturun; uzunluk ve karakter çeşitlerini belirleyin.
+- **Şifre Gösterme**: Bir girişin şifresini görün ve kopyalayın.
 
-Şifre Kırma: Belirli bir dosya için çeşitli şifreleri deneyerek doğru şifreyi bulmaya çalışabilirsiniz. Şifreler ya bir dosyadan ya da kullanıcı tarafından sağlanmış olabilir.
-Ayarlar Yönetimi:
+### Veri Dışa Aktarma ve İçe Aktarma
+- **Veri İçe Aktarma**: Başka bir KeePass veritabanından girişleri mevcut veritabanınıza aktarın.
+- **Veri Dışa Aktarma**: Veritabanınızdaki girişleri CSV veya JSON formatında dışa aktarın.
 
-Ayarlar Menüsü: Veritabanı dosya yolu, CSV ve JSON dosya yollarını yönetebilir ve bu yolları güncelleyebilirsiniz.
-Nasıl Çalışır?
-Ana Menü: Uygulama, kullanıcıya ana menüde çeşitli seçenekler sunar. Kullanıcı bir işlem seçer ve MediaVault bu işleme uygun fonksiyonu çalıştırır.
+### Veritabanı ve Şifre Yönetimi
+- **Yeni Veritabanı Oluşturma**: Yeni bir KeePass veritabanı oluşturun ve bunu bir şifre ile koruyun.
+- **Veritabanı Şifresini Değiştirme**: Var olan bir veritabanının şifresini değiştirin.
 
-İşlem Menülerinin Yönetimi: Her işlem, kullanıcıya daha fazla seçenek sunan alt menüler içerir. Örneğin, giriş eklerken önce mevcut girişleri listeleyebilir ve ardından yeni bilgileri ekleyebilirsiniz.
+### Şifre Kırma
+- **Şifre Kırma**: Belirli bir dosya için çeşitli şifreleri deneyerek doğru şifreyi bulmaya çalışın.
 
-Hata Yönetimi: MediaVault, kullanıcı hatalarını yakalar ve uygun hata mesajları ile kullanıcıyı bilgilendirir. Örneğin, yanlış şifre girilirse veya geçersiz bir dosya seçilirse kullanıcıya bilgi verir.
+### Ayarlar Yönetimi
+- **Ayarlar Menüsü**: Veritabanı dosya yolu, CSV ve JSON dosya yollarını yönetebilir ve bu yolları güncelleyebilirsiniz.
 
-Kullanılan Kütüphaneler
-os: Dosya ve sistem işlemleri için kullanılır, örneğin ekranı temizlemek.
-getpass: Şifrelerin gizli bir şekilde girilmesini sağlar.
-platform ve sys: Sistem bilgilerini almak için kullanılır.
-json: JSON formatında veri okuma ve yazma işlemleri için kullanılır.
-random ve string: Rastgele şifreler oluşturmak için kullanılır.
-itertools: Şifre kombinasyonları oluşturmak için kullanılır.
-pandas: Verileri tablo şeklinde göstermek için kullanılır.
-concurrent.futures ve multiprocessing: Şifre kırma işlemlerini paralel olarak hızlandırmak için kullanılır.
-pykeepass: KeePass veritabanlarını okuma ve yazma işlemleri için kullanılır.
-Kullanım Örneği
-Giriş Listeleme: Ana menüden "Girişleri Listele" seçeneğini seçtiğinizde, mevcut KeePass veritabanındaki tüm girişleri tablo şeklinde görüntülersiniz.
-Yeni Giriş Ekleme: "Yeni Giriş Ekle" seçeneğine tıkladığınızda, başlık, kullanıcı adı, şifre gibi bilgileri girer ve veritabanına eklersiniz.
-Şifre Kırma: Şifre kırma moduna geçtiğinizde, belirli bir dosya için şifreleri deneyerek doğru şifreyi bulmaya çalışabilirsiniz.
+## Nasıl Çalışır?
+
+MediaVault, kullanıcıya ana menüde çeşitli seçenekler sunar ve kullanıcı bir işlem seçtiğinde uygun fonksiyonu çalıştırır. Her işlem, alt menüler içerir ve hata yönetimi sayesinde kullanıcıyı bilgilendirir.
+
+## Kullanılan Kütüphaneler
+- **os**: Dosya ve sistem işlemleri.
+- **getpass**: Şifrelerin gizli bir şekilde girilmesi.
+- **platform ve sys**: Sistem bilgilerini almak.
+- **json**: JSON formatında veri okuma ve yazma.
+- **random ve string**: Rastgele şifreler oluşturma.
+- **itertools**: Şifre kombinasyonları oluşturma.
+- **pandas**: Verileri tablo şeklinde gösterme.
+- **concurrent.futures ve multiprocessing**: Şifre kırma işlemlerini hızlandırma.
+- **pykeepass**: KeePass veritabanlarını okuma ve yazma.
+
+## Kullanım Örneği
+
+- **Giriş Listeleme**: "Girişleri Listele" seçeneğiyle mevcut KeePass veritabanındaki tüm girişleri tablo şeklinde görüntüleyin.
+- **Yeni Giriş Ekleme**: "Yeni Giriş Ekle" seçeneğiyle başlık, kullanıcı adı, şifre gibi bilgileri girin ve veritabanınıza ekleyin.
+- **Şifre Kırma**: Şifre kırma modunda belirli bir dosya için şifreleri deneyerek doğru şifreyi bulmaya çalışın.
